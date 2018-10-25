@@ -10,4 +10,4 @@ COPY --from=0 /go/src/github.com/kubernetes-csi/driver-registrar/driver-registra
 RUN useradd csi-attacher
 USER csi-attacher
 
-CMD ["/usr/bin/driver-registrar"]
+ENTRYPOINT ["/usr/bin/driver-registrar"]
